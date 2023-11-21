@@ -26,6 +26,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
+
 init()
 
 var tl = gsap.timeline({

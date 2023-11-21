@@ -39,7 +39,7 @@ header{
     pointer-events: none;
     margin-right: 230px;
 }
-
+/* 
 .navigation a{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -48,13 +48,143 @@ header{
     border-radius: 20px;
     margin: 0 10px;
     font-weight: 600;
+    transition: all 0.15s;
 }
 
-/* hita jeva hover karnar teva background green ani font color white honar ani HOME wala button */
 .navigation a:hover, .navigation a.active{
     background-color: #359381;
     color: #fff;
+    height: 70px;
+} */
+
+
+.navigation{
+    margin-left: 45px;
 }
+
+.navigation ul, .navigation li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown-1{
+    background-color: #359381;
+    position: absolute;
+    list-style: none;
+    box-sizing: border-box;
+    width: 170px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    opacity: 0;
+    top: 95px;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.5 ease-in-out;
+}
+
+.dropdown-1 li{
+    /* float: left; */
+    position: relative;
+    margin: 3px 0px 3px 13px;
+
+}
+
+.dropdown-1 a{
+    box-sizing: border-box;
+    /* margin: 20px 7px 20px 7px; */
+    padding: 7px;
+    color: black;
+    /* background-color: #e5ece1; */
+    border-radius: 20px;
+}
+
+#elements{
+    color: white;
+}
+
+.dropdown-2{
+    background-color: #359381;
+    position: absolute;
+    list-style: none;
+    box-sizing: border-box;
+    width: 90px;
+    height: 110px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    opacity: 0;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.5 ease-in-out;
+}
+
+.dropdown-2 li{
+    /* float: left; */
+    position: relative;
+    margin: 3px 0px 3px 17px;
+
+}
+
+.dropdown-2 a{
+    box-sizing: border-box;
+    padding: 7px 7px 7px 18px;
+    color: black;
+    /* background-color: #e5ece1; */
+    border-radius: 20px;
+    transition: all 0.25 ease-in-out;
+    text-decoration: none;
+}
+
+#drop-1-2{
+    display: flex;
+    flex-direction: row;
+}
+
+#drop-1-2 li{
+    margin: 0 20px 0 20px;
+}
+
+li:hover .dropdown-1{
+    opacity: 0.9;
+    top: 98px;
+    left: 750px;
+    visibility: visible;
+}
+
+
+li:hover .dropdown-2{
+    opacity: 0.9;
+    top: 98px;
+    left: 887px;
+    visibility: visible;
+}
+
+
+
+#home{
+    padding: 7px 20px 7px 20px;
+    font-weight: 400;
+    border-radius: 20px;
+    background-color: #2a8271;
+    color: white;
+    transition: all 0.125s ease-in-out;
+}
+
+li:hover #home{
+    border-radius: 20px;
+    background-color: #359381;
+    font-weight: 400;
+    color: white;
+}
+
 
 .parallax{
     position: relative;
@@ -386,7 +516,7 @@ header{
 }
 
 .card-1 img:hover{
-    background-color: #666;
+    /* background-color: #666; */
     transform: scale(1.07);
 }
 
